@@ -19,8 +19,8 @@ resource "azurerm_sql_firewall_rule" "sqlfirewall" {
   name                = "FirewallRule07"
   resource_group_name = azurerm_resource_group.rg.name
   server_name         = azurerm_sql_server.sqlserver.name
-  start_ip_address    = "10.0.17.62"
-  end_ip_address      = "10.0.17.62"
+  start_ip_address    = "0.0.0.0"
+  end_ip_address      = "0.0.0.0"
 }
 resource "azurerm_storage_account" "storageaccount" {
   name                     = "ssqlstorage34"
